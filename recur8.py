@@ -1,13 +1,13 @@
-def RootK(X, K, N):
-  if N == 0:
+def RootK(x, k, n):
+  if n == 0:
     return 1
-  y = RootK(X, K, N - 1)
-  return y - (y - X / (y ** (K - 1))) / K
+  y = RootK(x, k, n - 1)
+  return y - (y - x / (y ** (k - 1))) / k
 
 
-X = float(input())
-K = int(input())
+x = float(input())
+k = int(input())
 
 for i in range(6):
-  N = int(input())
-  print(RootK(X, K, N))
+  n = int(input())
+  print(RootK(x, k, n))

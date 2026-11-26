@@ -1,11 +1,13 @@
-def NOD(A, B):
-  if B == 0:
-    return A
-  return NOD(B, A % B)
-A = int(input())
-B = int(input())
-C = int(input())
-D = int(input())
-print(NOD(A, B))
-print(NOD(A, C))
-print(NOD(A, D))
+def NOD(a, b):
+  if b == 0:
+    return a
+  return NOD(b, a % b)
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+print(NOD(a, b))
+print(NOD(a, c))
+print(NOD(a, d))
